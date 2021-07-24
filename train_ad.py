@@ -32,12 +32,10 @@ def eval_metrics(actual, pred):
 if __name__ == "__main__":
     warnings.filterwarnings("ignore")
     np.random.seed(40)
-    version = 'v3'
+    version = 'v4'
 
     # Read the wine-quality csv file from the URL
-    csv_url = (
-        "http://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv"
-    )
+    csv_url = "C:/Users/user/PycharmProjects/a_b_test-mlflow/data/AdSmartABdata.csv"
     try:
         data = pd.read_csv(csv_url, sep=";")
     except Exception as e:
@@ -49,10 +47,10 @@ if __name__ == "__main__":
     train, test = train_test_split(data)
 
     # The predicted column is "quality" which is a scalar from [3, 9]
-    train_x = train.drop(["quality"], axis=1)
-    test_x = test.drop(["quality"], axis=1)
-    train_y = train[["quality"]]
-    test_y = test[["quality"]]
+    train_x = train.drop(["yes"], axis=1)
+    test_x = test.drop(["yes"], axis=1)
+    train_y = train[["yes"]]
+    test_y = test[["yes"]]
 
     alpha = float(sys.argv[1]) if len(sys.argv) > 1 else 0.5
     l1_ratio = float(sys.argv[2]) if len(sys.argv) > 2 else 0.5
