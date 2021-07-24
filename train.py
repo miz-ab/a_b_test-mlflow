@@ -14,7 +14,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import ElasticNet
 from urllib.parse import urlparse
 import mlflow
-import mlflow.sklearn
+
 
 import logging
 
