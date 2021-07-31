@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/user/PycharmProjects/a_b_test-mlflow/mlruns/0/2f9f4aeafe6449f19225c0baec060370/artifacts
+end_time: 1627155756742
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 2f9f4aeafe6449f19225c0baec060370
+run_uuid: 2f9f4aeafe6449f19225c0baec060370
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1627155756482
+status: 4
+tags: []
+user_id: user
